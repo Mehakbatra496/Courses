@@ -28,11 +28,6 @@ public class CourseController {
     @Autowired
 //	@Qualifier("newCourseService")
     private CourseService service;
-
-    @PostMapping
-    public String create(@RequestBody @Valid CourseRequestDTO dto) {
-        return service.saveCourse(dto);
-    }
     
     @GetMapping
     public ResponseEntity<List<CourseResponseDTO>> getAll() {
