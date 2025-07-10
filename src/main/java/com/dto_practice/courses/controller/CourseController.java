@@ -55,6 +55,10 @@ public class CourseController {
         return ResponseEntity.ok(service.findByDepartmentIdS(id)); // a list is returned
     }
     
+    @GetMapping("/home")
+    public void Home() {
+    	System.out.print("Hie");
+	}
     
     
 }
